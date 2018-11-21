@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import BusinessList from '../BusinessList/BusinessList.js'
+import Business from '../Business/Business.js'
+import SearchBar from '../SearchBar/SearchBar.js'
 import './App.css';
 
 class App extends Component {

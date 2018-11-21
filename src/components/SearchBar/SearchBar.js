@@ -19,8 +19,6 @@ class SearchBar extends Component {
     }
     render () {
         return (
-            
-
             <div className="SearchBar">
             <div className="SearchBar-sort-options">
               <ul>
