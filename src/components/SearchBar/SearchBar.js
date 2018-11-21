@@ -24,7 +24,7 @@ class SearchBar extends Component {
             <div className="SearchBar">
             <div className="SearchBar-sort-options">
               <ul>
-                <!-- Use .renderSortByOptions() to sort the businesses by their options -->
+                {this.renderSortByOptions()}
               </ul>
             </div>
             <div className="SearchBar-fields">
@@ -35,9 +35,6 @@ class SearchBar extends Component {
               <a>Let's Go</a>
             </div>
           </div>
-
-
-           
         )
     }
 }
