@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './SearchBar.css';
 
 const sortByOptions = {
@@ -7,6 +7,7 @@ const sortByOptions = {
     "Most Reviewed": "review_count"
 
 }
+
 
 class SearchBar extends Component {
 
