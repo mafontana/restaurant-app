@@ -5,22 +5,33 @@ const sortByOptions = {
     "Best Match": "best_match",
     "Highest Rated": "rating",
     "Most Reviewed": "review_count"
-
 }
+
 
 
 class SearchBar extends Component {
     constructor(props){
         super(props) 
         this.state = {
-
-
-            
+            term: "",
+            location: "", 
+            sortBy: 'best_match'
         }
-
-
-
     }
+
+    getSortByClass (sortByOption) {
+        if (sortByOption === this.state.sortBy) {
+          return 'active'
+        } else {
+          return ''
+        }
+     }
+
+     handleSortByChange (sortByOption) {
+        this.setState({
+          sortBy: sortByOption
+        })
+      }
 
     renderSortByOptions() {
         return Object.keys(sortByOptions).map(sortByOption => {
