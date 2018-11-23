@@ -47,6 +47,11 @@ class SearchBar extends Component {
           location: event.target.value
         })
         }
+    
+    handleSearch(event) {
+        this.props.searchYelp(this.state.term, this.state.location, this.state.sortBy)
+        event.preventDefault()
+    }
 
     renderSortByOptions() {
         return Object.keys(sortByOptions).map(sortByOption => {
